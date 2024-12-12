@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <div class="head bg-gray-800 text-white text-center">
+        <h1 class="text-5xl font-bold py-5"><span>Rock Paper Scissors</span></h1>
+    </div>
+    <div class="images flex justify-center m-16 mt-26">
+        <div class="img1 flex justify-center size-64 mx-16">  
+            <img id="rock_img" class="rounded-[50%] object-cover hover:opacity-70 hover:cursor-pointer hover:border-black hover:border-4" src="images/rock.png" alt="rock image">
+        </div>
+        <div class="img2 flex justify-center size-64 mx-16">
+            <img id="paper_img" class="rounded-[50%] object-cover hover:opacity-70 hover:cursor-pointer hover:border-black hover:border-4" src="images/paper.png" alt="paper image">
+        </div>
+        <div class="img3 flex justify-center size-64 mx-16">
+            <img id="scissor_img" class="rounded-[50%] object-cover hover:opacity-70 hover:cursor-pointer hover:border-black hover:border-4" src="images/scissors.png" alt="scissors image">
+        </div>
+        
+    </div>
+    <div class="score flex justify-center gap-4">
+        <div class="user-score m-8">
+            <div class="text-6xl font-bold flex justify-center m-4">
+                <p id="user-cnt">0</p>
+            </div>
+            <p class="text-3xl font-bold">You</p>
+        </div>
+        <div class="comp-score m-8">
+            <div class="text-6xl font-bold flex justify-center m-4">
+                <p id="comp-cnt" >0</p>
+            </div>
+            <p class="text-3xl font-bold">Comp</p>
+        </div>
+    </div>
+    <div class="text-white text-center m-20">
+        <p id="message" class=" bg-gray-950 inline p-4 rounded-xl font-bold text-3xl">Play your move</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
